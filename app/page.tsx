@@ -4,9 +4,7 @@ import BackgroundGrid from "@/components/BackgroundGrid"
 export default function Home() {
   return (
     <main>
-      <section className="relative">
-        <BackgroundGrid />
-      </section>
+      <BackgroundGrid />
       <Hero />
     </main>
   )

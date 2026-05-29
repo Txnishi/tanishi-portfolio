@@ -7,15 +7,24 @@ import { indie, marcellus } from "@/app/fonts"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center ">
-      <div className="p-10 text-center space-y-4">
-        <div className="flex md:gap-10 items-center ">
-          <img
-            src="/images/mario-flower-pixel-Photoroom.png"
-            alt="mario-flower"
-            className="h-24"
-          />
-          <p className={`text-4xl bg-white inline-block ${indie.className}`}>
+    <section className=" flex items-center min-h-screen justify-center ">
+      <div className="p-10 min-w-2xl px-20 text-center space-y-4">
+        <div className="flex items-center">
+          <div className="relative group">
+            <img
+              src="/images/mario-flower-pixel-Photoroom.png"
+              alt="mario-flower"
+              className="h-30 absolute top-2.5 group-hover:hidden"
+            />
+            <img
+              src="/images/excited-mario-pixel-flower.png"
+              alt="excited-mario-flower"
+              className="h-30 group-hover:animate-bounce"
+            />
+          </div>
+          <p
+            className={`text-4xl w-1/2 font-bold bg-white inline-block ${indie.className}`}
+          >
             Hi I&apos;m
           </p>
         </div>
@@ -45,7 +54,7 @@ export default function Hero() {
         />
 
         <p
-          className={`mt-6 bg-pink-200 px-4 py-3 rounded-lg ${marcellus.className} `}
+          className={`mt-6 bg-pink-200 py-3 px-4 mx-auto w-fit rounded-lg ${marcellus.className} `}
         >
           I make Pixel Perfect React Applications!
         </p>
